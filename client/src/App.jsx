@@ -64,7 +64,7 @@ class App extends React.Component {
     Axios
       .get('http://localhost:8000/api/users')
       .then(response => {
-      console.log(response)
+      this.setState({users: response.data})
       })
       .catch(error => {
       console.log(error)
@@ -97,6 +97,9 @@ class App extends React.Component {
             <button>Login</button>
         </form>
         <button onClick={() => this.getUsers(this.state.token)}>Get Users</button>
+        {this.state.users.map(user => {
+          return <p>Name: {user.username} Token: {user.password}</p>
+        })}
         </div>
     );
   }
