@@ -1,0 +1,38 @@
+{
+  "name": "webauth-iii-challenge",
+  "version": "1.0.0",
+  "description": "Server Auth JWT",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lockers/webauth-iii-challenge.git"
+  },
+  "author": "Matt Locklin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lockers/webauth-iii-challenge/issues"
+  },
+  "homepage": "https://github.com/Lockers/webauth-iii-challenge#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.19.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.19.1",
+    "knex-cleaner": "^1.2.1",
+    "sqlite3": "^4.0.9"
+  }
+}
